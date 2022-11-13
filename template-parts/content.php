@@ -9,19 +9,19 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<div class="text-center">
+<article class="bg-slate-900" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header text-slate-200">
+		<div class="text-center py-24">
 			<div class="py-10">
-				<span class="px-4 py-3 bg-bg-color text-font-color font-fot rounded-lg"><?php echo date(get_option('date_format')); ?></span>
+				<span class="px-4 py-3 bg-white/30 backdrop-blur-md text-font-color font-fot rounded-lg"><?php echo date(get_option('date_format')); ?></span>
 			</div>
-			<div class="flex justify-center gap-3 mb-10">
-				<div class="flex justify-center items-center flex-col px-10">
+			<div class="flex justify-center gap-24">
+				<div class="flex justify-center items-center gap-4 flex-col px-10">
 					<img src="<?php the_field('home') ?>" alt="">
 					<h1 class="text-xl font-fot font-bold"><?php the_field('home_team') ?> </h1>
 				</div>
-				<span class="flex items-center px-10 font-extralight text-xl font-fot">VS</span>
-				<div class="flex justify-center items-center flex-col px-10">
+				<span class="flex items-center px-10 font-bold text-xl font-fot">VS</span>
+				<div class="flex justify-center items-center gap-4 flex-col px-10">
 					<img src="<?php the_field('away') ?>" alt="">
 					<h1 class="text-xl font-fot font-bold"><?php the_field('away_team') ?> </h1>
 				</div>
@@ -56,8 +56,4 @@
 		?>
 		</div>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php pmm_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -39,12 +39,12 @@ if (have_posts()) :
 			drop-shadow-lg">
 		 <div class="flex items-center lg:gap-16 gap-10">
 			<div class="flex flex-col gap-4 items-center">
-				<img class="lg:w-16 w-10 object-cover" src="<?php the_field('home') ?>" alt="">
+				<img class="lg:w-auto w-10 object-cover" src="<?php the_field('home') ?>" alt="">
 				<h2 class="text-font-color text-base lg:text-2xl"><?php the_field('home_team') ?></h2>
 			</div>
 			<span class="text-font-color text-sm lg:text-2xl font-bold">VS</span>
 			<div class="flex flex-col items-center gap-4">
-				<img class="object-cover lg:w-16 w-10" src="<?php the_field('away') ?>" alt="">
+				<img class="object-cover lg:w-auto w-10" src="<?php the_field('away') ?>" alt="">
 				<h2 class="text-font-color text-base lg:text-2xl"><?php the_field('away_team') ?></h2>
 			</div>
 		 </div>
@@ -54,8 +54,6 @@ if (have_posts()) :
 				uppercase lg:py-3 lg:px-6 py-2 px-3 lg:text-base text-sm rounded-lg transition duration-700 ease-in-out" href="<?php the_permalink() ?>">Watch Now</a>
 				<a class=" text-font-color py-2 px-3 lg:py-3 lg:px-6 lg:text-base text-sm hover:bg-blue-700 bg-blue-900
 				 rounded-lg transition duration-700" href="https://1xbet.com/en">1xbet</a>
-				 <a class=" text-font-color py-2 px-3 lg:py-3 lg:px-6 lg:text-base text-sm bg-sky-600
-				 rounded-lg" href="<?php the_permalink() ?>">TIPS</a>
 			</div>
 	</div>
 	<?php endwhile;

@@ -142,6 +142,7 @@ function pmm_scripts() {
 	wp_style_add_data( 'pmm-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'pmm-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_style( 'output', get_template_directory_uri() . '/style.css', array(), _S_VERSION );
 	wp_enqueue_style( 'output', get_template_directory_uri() . '/tailwind.css', array(), _S_VERSION );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

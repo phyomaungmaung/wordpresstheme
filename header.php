@@ -22,17 +22,19 @@
 
 <body <?php body_class(); ?>>
 
-<header class="bg-bg-color flex items-center justify-between font-fot border-b-2 border-slate-500 fixed w-full z-50 top-0">
-	<h1 class="font-bold uppercase text-3xl px-10 py-6 text-yellow-500"><a href="<?php echo home_url(); ?>">
-	<?php bloginfo( 'name' ); ?></a></h1>
-	<nav class="text-font-color lg:flex px-10 gap-4 items-center hidden">
-		<span class="uppercase">
-				<a href="#">
-					Home
-				</a>
-		</span>
-		<button class="px-4 py-3 bg-bg-button rounded-lg">LIVE</button>
-	</nav>
+<header class="bg-bg-color font-fot border-b-2 border-slate-500 fixed w-full z-50 top-0">
+	<div class="container px-24 py-4 flex justify-between">
+		<h1 class="font-bold uppercase text-3xl py-2 text-yellow-500"><a href="<?php echo home_url(); ?>">
+		<?php bloginfo( 'name' ); ?></a></h1>
+		<nav class="text-font-color lg:flex gap-4 items-center hidden">
+			<span class="uppercase">
+					<a href="#">
+						Home
+					</a>
+			</span>
+			<button class="px-4 py-3 bg-bg-button rounded-lg">LIVE</button>
+		</nav>
+	</div>
 </header>
 
 <header id='mobile' class="bg-blue/30 backdrop-blur-lg fixed bottom-0 z-50 w-full py-4 lg:hidden">
